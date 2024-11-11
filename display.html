@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کاروونکي معلومات ښکاره کول</title>
+</head>
+<body>
+    <h1>کاروونکي معلومات</h1>
+    <p>نوم: <span id="displayName"></span></p>
+    <p>ایمیل: <span id="displayEmail"></span></p>
+
+    <script>
+        // له Local Storage څخه د معلوماتو اخیستل او ښکاره کول
+        document.getElementById("displayName").textContent = localStorage.getItem("name") || "معلومات شتون نه لري";
+        document.getElementById("displayEmail").textContent = localStorage.getItem("email") || "معلومات شتون نه لري";
+    </script>
+</body>
+</html>
